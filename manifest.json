@@ -1,0 +1,27 @@
+{
+    "name": "MITB",
+    "version": "1.0",
+    "description": "Man In The Browser",
+    "manifest_version": 2,
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
+    "content_script": [
+        {
+            "matches": ["<all_urls>"],
+            "js": "sendGet.js"
+        }
+    ]
+}
